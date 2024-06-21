@@ -79,5 +79,40 @@ root@wadmin-Veriton-M200-H310:~# usermod -G demo dev
 
 root@wadmin-Veriton-M200-H310:~# id dev
 uid=1002(dev) gid=1001(devendra) groups=1001(devendra),1005(demo)
+
+
+Other usermod options:-------->
+-m -d :- /home/newfolder (to move the content of home folder to this new folder)
+-p : we can use passwod command also 
+-L -U : Lock/Unlock a uer
+
+root@wadmin-Veriton-M200-H310:/home# ls
+alex  dev  deva  devendra  wadmin
+root@wadmin-Veriton-M200-H310:/home# mkdir alex/demofolder
+root@wadmin-Veriton-M200-H310:/home# ls
+alex  dev  deva  devendra  wadmin
+
+root@wadmin-Veriton-M200-H310:~# usermod -m -d /home/alex_a alex
+root@wadmin-Veriton-M200-H310:/home# ls
+alex_a  dev  deva  devendra  wadmin
+root@wadmin-Veriton-M200-H310:/home# cd alex_a/
+root@wadmin-Veriton-M200-H310:/home/alex_a# ls
+demofolder
+
+root@wadmin-Veriton-M200-H310:/home# usermod -m -d /home/alex_x alex
+root@wadmin-Veriton-M200-H310:/home# ls
+alex_x  dev  deva  devendra  wadmin
+root@wadmin-Veriton-M200-H310:/home# cd alex_x/
+root@wadmin-Veriton-M200-H310:/home/alex_x# ls
+demofolder
+
+
+
+Q. Difference between update & upgrade?
+
+UPDATE: keep the old packages, we can rollback.
+UPGRADE: will delete the old packages.
+
+
  
 
