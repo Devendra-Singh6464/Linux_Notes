@@ -107,12 +107,16 @@ root@wadmin-Veriton-M200-H310:/home/alex_x# ls
 demofolder
 
 
-
 Q. Difference between update & upgrade?
 
 UPDATE: keep the old packages, we can rollback.
 UPGRADE: will delete the old packages.
 
 
- 
+if you create a folder inside the folder using one command 
+$ mkdir -p <folder1_name>/<folder2_name>
+
+
+Use set-hostname to Change the Hostname
+$ hostnamectl set-hostname new-hostname
 
