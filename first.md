@@ -139,3 +139,9 @@ $ hostnamectl set-hostname new-hostname
 2. Improved dependency management: Systemd can automatically start required services based on dependencies.
 3. Better logging: Systemd provides a centralized logging system called the journal.
 4. Easier service management: Systemd provides a consistent way to manage services using systemctl.
+
+```
+$grep
+```
+The name "grep" comes from the ed (a Unix line editor) command g/re/p which means “globally search for a regular expression and print all lines containing it”.
+
