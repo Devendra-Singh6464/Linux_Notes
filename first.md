@@ -145,3 +145,4 @@ $grep
 ```
 The name "grep" comes from the ed (a Unix line editor) command g/re/p which means “globally search for a regular expression and print all lines containing it”.
 
+1. https://digitalwatchdog.happyfox.com/kb/article/919-locating-a-usb-drive-on-ubuntu-linux/#:~:text=When%20a%20USB%20flash%20drive,to%20open%20the%20USB%20device.
