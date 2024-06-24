@@ -6,4 +6,6 @@
 6. https://www.geeksforgeeks.org/how-to-install-chrome-in-ubuntu/
 7. https://www.omgubuntu.co.uk/2019/08/install-chromium-browser-ubuntu
 8. https://www.digitalocean.com/community/tutorials/how-to-install-lamp-stack-on-ubuntu
-9. 
+9. https://www.geeksforgeeks.org/how-to-install-kazam-on-ubuntu/
+10. https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-20-04
+11. 
