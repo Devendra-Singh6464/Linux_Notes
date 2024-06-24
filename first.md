@@ -120,3 +120,22 @@ $ mkdir -p <folder1_name>/<folder2_name>
 Use set-hostname to Change the Hostname
 $ hostnamectl set-hostname new-hostname
 
+### What is Systemd?
+1. Systemd is a software suite that provides an initialization system and service management for Linux operating systems.
+2. Systemd is the first process started by the Linux kernel (with PID 1).
+3. It initializes and configures the userspace environment and services.
+4. Services are defined in unit files, which describe how to start, stop, and manage each service.
+5. Systemd uses socket-based activation to start services on demand when a request comes in.
+6. It also provides features like on-demand starting of daemons, parallelized starting of services, and automatic restarting of crashed services.
+
+## Key Components of Systemd
+1. systemd: The main daemon that manages the system
+2. systemctl: The command-line tool to control the system and service manager
+3. journalctl: The tool to view and query logs managed by the systemd journal
+4. systemd-analyze: The tool to analyze system boot-up performance
+
+## Benefits of Systemd
+1. Faster boot times: Systemd can start services in parallel, leading to faster boot times.
+2. Improved dependency management: Systemd can automatically start required services based on dependencies.
+3. Better logging: Systemd provides a centralized logging system called the journal.
+4. Easier service management: Systemd provides a consistent way to manage services using systemctl.
