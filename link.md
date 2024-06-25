@@ -9,4 +9,5 @@
 9. https://www.digitalocean.com/community/tutorials/how-to-install-lamp-stack-on-ubuntu
 10. https://www.geeksforgeeks.org/how-to-install-kazam-on-ubuntu/
 11. https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-20-04
-12. 
+12. https://phoenixnap.com/kb/install-vscode-ubuntu
+13. 
