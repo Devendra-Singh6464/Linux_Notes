@@ -146,3 +146,68 @@ $grep
 The name "grep" comes from the ed (a Unix line editor) command g/re/p which means “globally search for a regular expression and print all lines containing it”.
 
 1. https://digitalwatchdog.happyfox.com/kb/article/919-locating-a-usb-drive-on-ubuntu-linux/#:~:text=When%20a%20USB%20flash%20drive,to%20open%20the%20USB%20device.
+
+
+## CONTROLLING SERVICE AND DAEMONS---
+
+systemd :
+The systemd daemon manages startup for linux,including service startu and service management in general.It actives system resources,server daemons and other processes both at boot time and on a runing system.
+
+# Listin Service Units:
+You use the systemctl command to exploer the currecnt state of the system.
+This command without any arguments lists that are both loaded and active.
+```
+systemctl
+```
+
+This command lists only the service units with active activaton states.
+```
+systemctl list-units --type=service
+systemctl --type=service
+```
+
+enabled : available across re-boot system.
+
+
+1. if you want to set the limeit any service to tack a memory so 
+```
+systemctl set-property (service_name)httpd.service MemoryLimit=200M
+```
+```
+systemctl status httpd
+```
+
+oom kiiler: out of memory killer. 
+
+if you restart the any service that means `pid` changed
+how to cheack `pid`
+```
+pidof <service_name>
+```
+
+if you reload the any servcie so service `pid` not changed-
+```
+systemctl reload <service_name>
+```
+
+if you change apache default port:80 so
+```
+vi /etc/httpd/conf/httpd.conf
+```
+and change the `listen`
+```
+systemctl restart httpd
+```
+
+
+
+--- change host name:
+```
+hostnamectl set-hostname <name'ip_last'>
+```
+
+--- memory hdd check:
+```
+lsblk
+``` 
+  
