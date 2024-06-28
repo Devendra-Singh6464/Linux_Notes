@@ -14,3 +14,4 @@
 14. https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-20-04
 15. varnish : https://www.varnish-software.com/developers/tutorials/installing-varnish-ubuntu/
 16. iptable drop accept : https://www.ibm.com/docs/en/linux-on-systems?topic=tests-firewall-iptables-rules
+    AND.  https://help.ubuntu.com/community/IptablesHowTo
