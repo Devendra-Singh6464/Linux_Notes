@@ -15,3 +15,4 @@
 15. varnish : https://www.varnish-software.com/developers/tutorials/installing-varnish-ubuntu/
 16. iptable drop accept : https://www.ibm.com/docs/en/linux-on-systems?topic=tests-firewall-iptables-rules
     AND.  https://help.ubuntu.com/community/IptablesHowTo
+17. wordpress: https://vexxhost.com/resources/tutorials/how-to-install-wordpress-with-ubuntu-20-04-and-a-lamp-stack/
