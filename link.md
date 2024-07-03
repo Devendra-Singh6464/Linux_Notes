@@ -1,3 +1,5 @@
+Allmost all here:  https://tech2towards.blogspot.com/
+
 1. https://www.tecmint.com/install-shutter-in-ubuntu/#:~:text=On%20Ubuntu%2020.04%2C%20the%20Shutter,also%20works%20on%20Linux%20Mint).
 2. https://askubuntu.com/questions/297845/how-do-i-install-filezilla
 3. https://www.computernetworkingnotes.com/linux-tutorials/how-to-install-filezilla-ftp-client-in-ubuntu.html
