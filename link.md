@@ -19,3 +19,4 @@ Allmost all here:  https://tech2towards.blogspot.com/
 18. Prestashop:   https://www.atlantic.net/vps-hosting/how-to-install-prestashop-on-ubuntu-20-04/
 19. magento : https://www.mgt-commerce.com/tutorial/how-to-install-magento-2-4-4-on-ubuntu-20-04/
 20. magento : https://cloudinfrastructureservices.co.uk/install-magento-2-on-ubuntu-20-04/
+21. magento: https://meetanshi.com/blog/install-magento-2-on-ubuntu/
