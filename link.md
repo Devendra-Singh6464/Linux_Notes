@@ -11,8 +11,8 @@ Allmost all here:  https://tech2towards.blogspot.com/
 9. kazam :https://www.geeksforgeeks.org/how-to-install-kazam-on-ubuntu/
 11. php myadmin: https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-20-04
 12. VS CODE: https://phoenixnap.com/kb/install-vscode-ubuntu
-13. https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-20-04
-14. 15. varnish : https://www.varnish-software.com/developers/tutorials/installing-varnish-ubuntu/
+13. cmposer: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-20-04
+14. varnish : https://www.varnish-software.com/developers/tutorials/installing-varnish-ubuntu/
 16. iptable drop accept : https://www.ibm.com/docs/en/linux-on-systems?topic=tests-firewall-iptables-rules
     AND.  https://help.ubuntu.com/community/IptablesHowTo
 17. wordpress: https://vexxhost.com/resources/tutorials/how-to-install-wordpress-with-ubuntu-20-04-and-a-lamp-stack/
