@@ -21,3 +21,4 @@ Allmost all here:  https://tech2towards.blogspot.com/
 20. magento : https://cloudinfrastructureservices.co.uk/install-magento-2-on-ubuntu-20-04/
 21. magento: https://meetanshi.com/blog/install-magento-2-on-ubuntu/
 22. https://www.server-world.info/en/note?os=Ubuntu_20.04&p=openldap&f=3
+23. https://blog.eldernode.com/install-ldap-client-on-ubuntu-20-04/
