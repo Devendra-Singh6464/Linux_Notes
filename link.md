@@ -23,3 +23,4 @@ Allmost all here:  https://tech2towards.blogspot.com/
 22. https://www.server-world.info/en/note?os=Ubuntu_20.04&p=openldap&f=3
 23. https://blog.eldernode.com/install-ldap-client-on-ubuntu-20-04/
 24. NO machine :  https://green.cloud/docs/how-to-install-nomachine-remote-desktop-tool-on-ubuntu-20-04/
+25. HR printed install : https://developers.hp.com/hp-linux-imaging-and-printing/install/manual/distros/ubuntu
