@@ -5,11 +5,8 @@
 2. Create a Linux launcher icon.
 $ vi /usr/share/applications/<application_name.desktop>
 
-
-
 How to check current default permission?
 $umask
-
 
 chomd: change permission the file
 chown: change user/owner permission
@@ -212,7 +209,7 @@ lsblk
 ```
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Increase swap memory in ubuntu-------
+### Increase swap memory in ubuntu-------
 ```
 sudo fallocate -l 10G /swapfile
 ```
@@ -229,18 +226,18 @@ sudo swapon /swapfile  and
 sudo mount -a after this `reboot`
 ```
 
-No machine restart---
+### No machine restart---
 ```
 /etc/NX/nxserver --restart
 ```
 
-Check elasticsearch status----
+### Check elasticsearch status----
 ```
 sudo /etc/init.d/elaticsearch status
 ```
 
-if you want start elasticsearch with less memory so .
--Please edit this line.source ~/.bashrc
+### if you want start elasticsearch with less memory so .
+### -Please edit this line.source ~/.bashrc
 
 #Xms4g
 #Xms4g 
@@ -248,17 +245,17 @@ if you want start elasticsearch with less memory so .
 vi /etc/elaticsearch/jvm.options
 ```
 
-# How to IP tables flush
+### How to IP tables flush
 ```
 iptables -F
 ```
 
-# Check IP table allows status 
+### Check IP table allows status 
 ```
 iptables -L
 ```
 
-# If you share a file 1 server to another server so using rsync 
+### If you share a file 1 server to another server so using rsync 
 Syntax =>
 ```
 rsync -rav <user_name>/ <destination_username>:@destination_IP_address:<destination_address>
@@ -266,12 +263,12 @@ rsync -rav <user_name>/ <destination_username>:@destination_IP_address:<destinat
 ```
 rsync -rav devendra/ devendra.singh@192.168.15.138:/home/devendra.singh
 ```
-create a new folder-
+### create a new folder-
 ```
 rsync -rav <user_name>/ <destination_username>:@destination_IP_address:<destination_address> <folder_name>
 ```
 
-# Using `scp` command copy and paste file to host server to remote server.
+### Using `scp` command copy and paste file to host server to remote server.
 ```
 scp -r <folder_name> <destini_user_name>@<destini_ip>:<path where you copy folder>
 ```
@@ -280,38 +277,38 @@ scp -r <folder_name> <destini_user_name>@<destini_ip>:<path where you copy folde
 sudo usermod --shell /bin/sh devendra
 ```
 
-# If you want to change default shell a particular user
+### If you want to change default shell a particular user
 ```
 chsh -s /bin/<shell_name> <user_name>
 ```
 
-# After check 
+### After check 
 ```
 grep <username> /etc/passwd
 ```
 
-# How to check how many shell download in my system
+### How to check how many shell download in my system
 ```
 cat /etc/shells
 ```
 
-# How to check how to storage in my system
+### How to check how to storage in my system
 ```
 du -sh (Specific_folder)
 ```
 
-# All data in my system
+### All data in my system
 ```
 df -hT
 ```
 
-# If you want to create a parmanent alias so edit .bashrc file 
+### If you want to create a parmanent alias so edit .bashrc file 
 ```
 vi .bashrc
 ```
 
-edit--- 
-# some more ls aliases
+## edit--- 
+### some more ls aliases
 alias 32='ssh vagrant@192.168.1.32'
 
 If you any change .bashrc file so run this command  
