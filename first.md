@@ -237,12 +237,16 @@ sudo /etc/init.d/elaticsearch status
 ```
 
 ### if you want start elasticsearch with less memory so .
-### -Please edit this line.source ~/.bashrc
-
+So please edit this file-----
+```  
+vi /etc/elaticsearch/jvm.options
+```
 #Xms4g
 #Xms4g 
+
+after edit this file restart elasticsearch service
 ```
-vi /etc/elaticsearch/jvm.options
+sudo /etc/init.d/elaticsearch start
 ```
 
 ### How to IP tables flush
