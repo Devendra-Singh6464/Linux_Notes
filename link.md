@@ -25,3 +25,4 @@ Almost all here:  https://tech2towards.blogspot.com/
 24. NO machine:  https://green.cloud/docs/how-to-install-nomachine-remote-desktop-tool-on-ubuntu-20-04/
 25. HR printed install: https://developers.hp.com/hp-linux-imaging-and-printing/install/manual/distros/ubuntu
 26. increase swap memory: https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04
+27. create-filesystem-linux: https://opensource.com/article/19/4/create-filesystem-linux-partition
