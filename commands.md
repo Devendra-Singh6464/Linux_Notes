@@ -7,11 +7,13 @@ Increase swap memory in ubuntu-------
 sudo mount -a after this `reboot`
 
 No machine restart---
-$ /etc/NX/nxserver --restart
-
+```
+/etc/NX/nxserver --restart
+```
 Check elasticsearch status----
-$ sudo /etc/init.d/elaticsearch status
-
+```
+sudo /etc/init.d/elaticsearch status
+```
 if you want start elasticsearch with less memory so .
 -Please edit this line.source ~/.bashrc
 
@@ -29,50 +31,64 @@ sudo /etc/init.d/elaticsearch start
 ```
 
 # How to IP tables flush
-$ iptables -F
+```
+iptables -F
+```
 
 # Check IP table allows status 
-$ iptables -L
-
+```
+iptables -L
+```
 
 # If you share a file 1 server to another server so using rsync 
 Syntax =>
 $ rsync -rav <user_name>/ <destination_username>:@destination_IP_address:<destination_address>
-$ rsync -rav devendra/ devendra.singh@192.168.15.138:/home/devendra.singh
+```
+rsync -rav devendra/ devendra.singh@192.168.15.138:/home/devendra.singh
+```
 
 create a new folder-
 $ rsync -rav <user_name>/ <destination_username>:@destination_IP_address:<destination_address> <folder_name>
 
 # Using `scp` command copy and paste file to host server to remote server.
 $ scp -r <folder_name> <destini_user_name>@<destini_ip>:<path where you copy folder>
-
-$ sudo usermod --shell /bin/sh devendra
-
+```
+sudo usermod --shell /bin/sh devendra
+```
 # If you want to change default shell a particular user
-$ chsh -s /bin/<shell_name> <user_name>
-
+```
+chsh -s /bin/<shell_name> <user_name>
+```
 # After check 
-$ grep <username> /etc/passwd
-
+```
+grep <username> /etc/passwd
+```
 # How to check how many shell download in my system
-$ cat /etc/shells
-
+```
+cat /etc/shells
+```
 # How to check how to storage in my system
-$ du -sh (Specific_folder)
-
+```
+du -sh (Specific_folder)
+```
 # All data in my system
-$ df -hT
-
+```
+df -hT
+```
 # If you want to create a parmanent alias so edit .bashrc file 
-$  vi .bashrc
+```
+vi .bashrc
+```
 edit--- 
 # some more ls aliases
+```
 alias 32='ssh vagrant@192.168.1.32'
+```
 
 If you any change .bashrc file so run this command  
-$ source ~/.bashrc
-
-
+```
+source ~/.bashrc
+```
 # If you want to check Kernel IP routing table.
 ```
 route -n
