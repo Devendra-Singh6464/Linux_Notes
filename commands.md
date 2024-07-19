@@ -1,6 +1,90 @@
-!. How to share file using ip address.
-1. $ rsync -rac <filename> <username>@ip_address:<destination_path>
+Increase swap memory in ubuntu-------
 
+1. sudo fallocate -l 10G /swapfile
+2. sudo chmod 600 /swapfile
+3. sudo mkswap /swapfile
+4. sudo swapon /swapfile  and 
+sudo mount -a after this `reboot`
+
+No machine restart---
+$ /etc/NX/nxserver --restart
+
+Check elasticsearch status----
+$ sudo /etc/init.d/elaticsearch status
+
+if you want start elasticsearch with less memory so .
+-Please edit this line.source ~/.bashrc
+
+# If you want to set fixe memory to elasticsearch ----
+So please edit this file-----
+```  
+vi /etc/elaticsearch/jvm.options
+```
+#Xms4g
+#Xms4g 
+
+after edit this file restart elasticsearch service
+```
+sudo /etc/init.d/elaticsearch start
+```
+
+# How to IP tables flush
+$ iptables -F
+
+# Check IP table allows status 
+$ iptables -L
+
+
+# If you share a file 1 server to another server so using rsync 
+Syntax =>
+$ rsync -rav <user_name>/ <destination_username>:@destination_IP_address:<destination_address>
+$ rsync -rav devendra/ devendra.singh@192.168.15.138:/home/devendra.singh
+
+create a new folder-
+$ rsync -rav <user_name>/ <destination_username>:@destination_IP_address:<destination_address> <folder_name>
+
+# Using `scp` command copy and paste file to host server to remote server.
+$ scp -r <folder_name> <destini_user_name>@<destini_ip>:<path where you copy folder>
+
+$ sudo usermod --shell /bin/sh devendra
+
+# If you want to change default shell a particular user
+$ chsh -s /bin/<shell_name> <user_name>
+
+# After check 
+$ grep <username> /etc/passwd
+
+# How to check how many shell download in my system
+$ cat /etc/shells
+
+# How to check how to storage in my system
+$ du -sh (Specific_folder)
+
+# All data in my system
+$ df -hT
+
+# If you want to create a parmanent alias so edit .bashrc file 
+$  vi .bashrc
+edit--- 
+# some more ls aliases
+alias 32='ssh vagrant@192.168.1.32'
+
+If you any change .bashrc file so run this command  
+$ source ~/.bashrc
+
+
+# If you want to check Kernel IP routing table.
+```
+route -n
+```
+
+# If you check all runing service port number 
+```
+netstat -lntp
+```
+
+## How to share file using ip address.
+1. $ rsync -rac <filename> <username>@ip_address:<destination_path>
 
 2. Create a Linux launcher icon.
 $ vi /usr/share/applications/<application_name.desktop>
@@ -11,7 +95,6 @@ $umask
 chomd: change permission the file
 chown: change user/owner permission
 chgrp: change group permissioin
-
 
 if you change the permission inside the folder all files so-------->
 chmod -R user:group <folder_name>
@@ -43,7 +126,6 @@ $setfacl -Rm "entry" <target_file/folder>
 Composer----------->
 https://www.cherryservers.com/blog/how-to-install-composer-ubuntu
 
-
 Install secure phpmyadmin--------->
 https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-20-04
 
@@ -55,7 +137,6 @@ useradd <usre_name>
 adduser <user_name>
 
 useradd -g <group_name> -s /bin/bash -c "This is a tempory user" -m -d /home/<user_name> <user_name>
-
 
 Modify user-----
 root@wadmin-Veriton-M200-H310:/home# id alex
@@ -76,73 +157,10 @@ root@wadmin-Veriton-M200-H310:~# usermod -G demo dev
 
 root@wadmin-Veriton-M200-H310:~# id dev
 uid=1002(dev) gid=1001(devendra) groups=1001(devendra),1005(demo)
+ 
+chage :-
 
-
-Other usermod options:-------->
--m -d :- /home/newfolder (to move the content of home folder to this new folder)
--p : we can use passwod command also 
--L -U : Lock/Unlock a uer
-
-root@wadmin-Veriton-M200-H310:/home# ls
-alex  dev  deva  devendra  wadmin
-root@wadmin-Veriton-M200-H310:/home# mkdir alex/demofolder
-root@wadmin-Veriton-M200-H310:/home# ls
-alex  dev  deva  devendra  wadmin
-
-root@wadmin-Veriton-M200-H310:~# usermod -m -d /home/alex_a alex
-root@wadmin-Veriton-M200-H310:/home# ls
-alex_a  dev  deva  devendra  wadmin
-root@wadmin-Veriton-M200-H310:/home# cd alex_a/
-root@wadmin-Veriton-M200-H310:/home/alex_a# ls
-demofolder
-
-root@wadmin-Veriton-M200-H310:/home# usermod -m -d /home/alex_x alex
-root@wadmin-Veriton-M200-H310:/home# ls
-alex_x  dev  deva  devendra  wadmin
-root@wadmin-Veriton-M200-H310:/home# cd alex_x/
-root@wadmin-Veriton-M200-H310:/home/alex_x# ls
-demofolder
-
-
-Q. Difference between update & upgrade?
-
-UPDATE: keep the old packages, we can rollback.
-UPGRADE: will delete the old packages.
-
-
-if you create a folder inside the folder using one command 
-$ mkdir -p <folder1_name>/<folder2_name>
-
-
-Use set-hostname to Change the Hostname
-$ hostnamectl set-hostname new-hostname
-
-### What is Systemd?
-1. Systemd is a software suite that provides an initialization system and service management for Linux operating systems.
-2. Systemd is the first process started by the Linux kernel (with PID 1).
-3. It initializes and configures the userspace environment and services.
-4. Services are defined in unit files, which describe how to start, stop, and manage each service.
-5. Systemd uses socket-based activation to start services on demand when a request comes in.
-6. It also provides features like on-demand starting of daemons, parallelized starting of services, and automatic restarting of crashed services.
-
-## Key Components of Systemd
-1. systemd: The main daemon that manages the system
-2. systemctl: The command-line tool to control the system and service manager
-3. journalctl: The tool to view and query logs managed by the systemd journal
-4. systemd-analyze: The tool to analyze system boot-up performance
-
-## Benefits of Systemd
-1. Faster boot times: Systemd can start services in parallel, leading to faster boot times.
-2. Improved dependency management: Systemd can automatically start required services based on dependencies.
-3. Better logging: Systemd provides a centralized logging system called the journal.
-4. Easier service management: Systemd provides a consistent way to manage services using systemctl.
-
-```
-$grep
-```
-The name "grep" comes from the ed (a Unix line editor) command g/re/p which means “globally search for a regular expression and print all lines containing it”.
-
-1. https://digitalwatchdog.happyfox.com/kb/article/919-locating-a-usb-drive-on-ubuntu-linux/#:~:text=When%20a%20USB%20flash%20drive,to%20open%20the%20USB%20device.
+chage [-m mindays] [-M maxdays] [-d lastday] [-I inactive] [-E expiredate] [-W warndays] user_name
 
 
 ## CONTROLLING SERVICE AND DAEMONS---
@@ -156,17 +174,14 @@ This command without any arguments lists that are both loaded and active.
 ```
 systemctl
 ```
-
 This command lists only the service units with active activaton states.
 ```
 systemctl list-units --type=service
 systemctl --type=service
 ```
+Enabled : available across re-boot system.
 
-enabled : available across re-boot system.
-
-
-1. if you want to set the limeit any service to tack a memory so 
+1. if you want to set the limit any service to tack a memory so 
 ```
 systemctl set-property (service_name)httpd.service MemoryLimit=200M
 ```
@@ -191,137 +206,124 @@ if you change apache default port:80 so
 ```
 vi /etc/httpd/conf/httpd.conf
 ```
+
 and change the `listen`
 ```
 systemctl restart httpd
 ```
 
-
-
---- change host name:
+How to change host name:
 ```
-hostnamectl set-hostname <name'ip_last'>
+hostnamectl set-hostname <newname>
 ```
 
---- memory hdd check:
+# how check hdd check:
 ```
 lsblk
-```
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+``` 
 
-### Increase swap memory in ubuntu-------
+----Use the command to verify that the a service unit is currently active(running).-----
 ```
-sudo fallocate -l 10G /swapfile
-```
-```
-sudo chmod 600 /swapfile
-```
-```
-sudo mkswap /swapfile
-```
-```
-sudo swapon /swapfile  and 
-```
-```
-sudo mount -a after this `reboot`
+systemctl is-active/enabled <servce_name>.service  
 ```
 
-### No machine restart---
+----To verify wheter the unit failed during startup.------
 ```
-/etc/NX/nxserver --restart
-```
-
-### Check elasticsearch status----
-```
-sudo /etc/init.d/elaticsearch status
+systemctl is-failed <service_name>.service
 ```
 
-### if you want start elasticsearch with less memory so .
-So please edit this file-----
-```  
-vi /etc/elaticsearch/jvm.options
-```
-#Xms4g
-#Xms4g 
+## Firewalld service on ubuntu------ 
 
-after edit this file restart elasticsearch service
+how to start firewalld service on ubuntu
 ```
-sudo /etc/init.d/elaticsearch start
+systemctl start firewalld
 ```
 
-### How to IP tables flush
+enable--
 ```
-iptables -F
-```
-
-### Check IP table allows status 
-```
-iptables -L
+systemctl enable firewalld
 ```
 
-### If you share a file 1 server to another server so using rsync 
-Syntax =>
+check status--
 ```
-rsync -rav <user_name>/ <destination_username>:@destination_IP_address:<destination_address>
-```
-```
-rsync -rav devendra/ devendra.singh@192.168.15.138:/home/devendra.singh
-```
-### create a new folder-
-```
-rsync -rav <user_name>/ <destination_username>:@destination_IP_address:<destination_address> <folder_name>
+systemctl status firewalld
 ```
 
-### Using `scp` command copy and paste file to host server to remote server.
+stop the service-----
 ```
-scp -r <folder_name> <destini_user_name>@<destini_ip>:<path where you copy folder>
-```
-
-```
-sudo usermod --shell /bin/sh devendra
+systemctl stop <service_name>.service
 ```
 
-### If you want to change default shell a particular user
+`systemctl list-dependenies` this commadn displays a hierachy mapping of dependencies to start the service unit to list reverse dependencies(units that depend on the specified unit), use the --reverse opton with the command.
 ```
-chsh -s /bin/<shell_name> <user_name>
-```
-
-### After check 
-```
-grep <username> /etc/passwd
+systemctl list-dependencies <service_name>.service
 ```
 
-### How to check how many shell download in my system
-```
-cat /etc/shells
-```
+## Masking and unmasking Services-----
+Masking a Service: When you "mask" a service, you're essentially telling systemd to not start that service under any circumstances. It's a way to completely disable a service.
 
-### How to check how to storage in my system
 ```
-du -sh (Specific_folder)
+systemctl mask <service_name>.service
 ```
+```
+systemctl list unit-files --type==service
+```
+attempring to start a masked service unit fails.
 
-### All data in my system
+how to unmask ---------
 ```
-df -hT
-```
-
-### If you want to create a parmanent alias so edit .bashrc file 
-```
-vi .bashrc
+systemctl umask <service_name>.service
 ```
 
-## edit--- 
-### some more ls aliases
-alias 32='ssh vagrant@192.168.1.32'
-
-If you any change .bashrc file so run this command  
+## Enabling Servies to start or stop at Boot---
+To start a service atr boot,use the systemctl enable command 
 ```
-source ~/.bashrc
+systemctl enable <service_name>.service
+```
+ 
+how many service given sudo privilages----
+```
+vi /etc/sudoers
+``` 
+
+# If you faceing this type issue so ----
+'
+E: Failed to fetch https://packagecloud.io/AtomEditor/atom/any/dists/any/InRelease  402  Payment Required [IP: 52.9.110.75 443]
+E: The repository 'https://packagecloud.io/AtomEditor/atom/any any InRelease' is no longer signed.
+'
+```
+vi /etc/apt/source.list
+```
+-- and commant the AtomEditor line
+
+
+# If you check which all php version on your system and change the php version 
+```
+update-alternatives --config php
+```
+Optional---
+```
+update-alternatives --config php.phar
 ```
 
+# How to disable and enable service mode-----
 
+# enmod service-
+```
+a2enmod service
+```
 
+# disable service
+```
+a2dismod service
+```
 
+enable php version
+```
+a2enmod php+version_name
+```
 
-  
+disable php version
+```
+a2dismod php+version
+```
