@@ -26,3 +26,4 @@ Almost all here:  https://tech2towards.blogspot.com/
 25. HR printed install: https://developers.hp.com/hp-linux-imaging-and-printing/install/manual/distros/ubuntu
 26. increase swap memory: https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04
 27. create-filesystem-linux: https://opensource.com/article/19/4/create-filesystem-linux-partition
+28. Eclipse IDE:  https://www.tecmint.com/eclipse-install-ubuntu/ 
