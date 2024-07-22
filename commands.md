@@ -343,3 +343,34 @@ disable php version
 ```
 a2dismod php+version
 ```
+
+# File Transfer using SFTP
+## Initiating an SFTP Connection
+```
+sftp devendra@192.168.1.145
+```
+
+## Transferring Files from Remote Servers to Local Systems.
+> Syntax - get /path/to/remote/server/file.txt
+```
+get /devendra/first_01
+```
+> You will see the file is getting copied into the local machine.
+
+## if you transfer folder so
+```
+get -r devendra/
+```
+
+```
+mget /devendra/files_*.
+```
+> multiple files from remote server.
+
+
+## Transferring Files from Local Systems to Remote Servers
+> Syntax - put /path/to/local/file/abc.txt /path/to/remote/directory
+
+```
+put /home/users/devendra.singh/help devendra/dev/
+```
