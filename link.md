@@ -28,3 +28,6 @@ Almost all here:  https://tech2towards.blogspot.com/
 27. create-filesystem-linux: https://opensource.com/article/19/4/create-filesystem-linux-partition
 28. Eclipse IDE:  https://www.tecmint.com/eclipse-install-ubuntu/
 29. flutter installation for ubuntu : https://simonscholz.dev/tutorials/install-flutter#download-flutter-sdk
+30. Composer installation: https://www.cherryservers.com/blog/how-to-install-composer-ubuntu
+31. Install secure phpmyadmin : https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-20-04
+32. How to install and configure phpMyAdmin : https://ubuntu.com/server/docs/how-to-install-and-configure-phpmyadmin
