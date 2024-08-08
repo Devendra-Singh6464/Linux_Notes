@@ -32,3 +32,4 @@ Almost all here:  https://tech2towards.blogspot.com/
 31. Install secure phpmyadmin : https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-20-04
 32. How to install and configure phpMyAdmin : https://ubuntu.com/server/docs/how-to-install-and-configure-phpmyadmin
 33. React native : https://rlogicaltech.medium.com/how-to-install-react-native-on-mac-step-by-step-guide-1ac822aedd4f
+34. firefox : https://www.omgubuntu.co.uk/2022/04/how-to-install-firefox-deb-apt-ubuntu-22-04
