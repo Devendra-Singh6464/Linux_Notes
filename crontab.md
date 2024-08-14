@@ -1,12 +1,26 @@
-# Crontab 
 # CRONTAB------
 
-Show all current jobs---
+### View thelist of existing cron jobs in your crontab---
 ```
 crontab -l 
 ```
 
-edit o add new	jobs----
+### If you remove to all cron jobs from your crontab,------
+```
+crontab -r
+```
+
+### prompt before deleting the current user's crontab file.
+```
+crontab -i
+```
+ 
+### Run cron in the foreground (useful for troubleshooting). 
+```
+cron -f
+```
+ 
+### Access and edit the cron table,----
 ```
 crontab -e
 ```
@@ -29,4 +43,32 @@ CMD      Command         Any command to be execute
 05 12 	*2,4 * :   at 12:05 Pm, only in february and april 
 
 
-	
+###  / devide a value into steps: The slash is used to create specified intervals of time within a range.[Every 10 of every day]
+```
+*/10 * * * */home/users/devendra.singh/echo "hello"
+```
+
+### - a range of values : The Hyphen is used to specify the range of the time in which the task run.
+```
+0-59 0-23 * * * /home/users/devendra.singh/cp backup1.txt backup1.old
+```
+
+example ---
+```
+30 8 * * 1-5 /home/users/devendra.singh/backup.sh
+```
+Explanation: This cron job executes the command at 8:30 from Manday to Friday.
+
+
+## Valuse----
+*	any value
+,	value list separator
+-	range of values
+/	step values
+@yearly	(non-standard)
+@annually	(non-standard)
+@monthly	(non-standard)
+@weekly	(non-standard)
+@daily	(non-standard)
+@hourly	(non-standard)
+@reboot	(non-standard)
