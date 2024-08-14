@@ -20,7 +20,7 @@ iptables -F
 iptables -t filter -D INPUT -s 149.154.161.221 -j DROP 
 ```
 
-## Block all types of access to 'filewall' from any ip. 
+## Block all types of access to 'filewall' from any ip we are not able to access anything on 'firewall'. 
 ```
 iptables -t filter -A INPUT -j DROP 
 ```
@@ -37,5 +37,59 @@ iptables -t filter -A INPUT -m tcp/udp -p tcp/udp -a 172.24.0.11 --drop 80 -j DR
 ```
 iptables -t filter -A INPUT  -m multiport -p tcp/upd -s 172.24.0.11 --dports 22,23 -j DROP 
 ```
-### block 'ssh' and 'telnet'. if we have written incourect rule syntax,'iptables' will show the error
+```
+iptables -A INPUT -p tcp --dport 22 -j REJECT
+```
+
+block 'ssh' and 'telnet'. if we have written incourect rule syntax,'iptables' will show the error	 
+
+### iptables Syntax and Options.
+1. -A, --append : Append a rule to a chain.
+2. -C, --check	: Look for a rule that matches a chain.
+3. -D, --delete : Remove a rule from  a chain.
+4. -F, --flush : Remove all rules.
+5. -I, --insert : Add a rule to a chain at the provided position.
+6. -L, --list : Show all rules in a chain.
+7. -N, --new-chain : Create a new chain.
+8. -V, --verbose : Show a more details output. 
+9. -X --delete-chain : Delete chain.
+
+## Save Rules.
+```
+iptables-save |sudo tee /etc/iptables/rules.v4
+```
+(save the rules in 'input-rules-1' file. the file name could be anything)
+
+```
+cat input-rules-1
+```
+(view the save rules)  
+but if we reboot system, so rules will gwt lost and we have to restore from 'input-rules-1'file.
+1. if to make rules permanent ,we have to save these rules in `/etc/sysconfig/iptables`file.
+
+
+## How delete all rules and then restore rules from "forward-rules-1" file by using "iptables-restparmanore" and verify
+```
+iptables -F 
+```
+```
+iptables -L -n
+```
+```
+iptables-restore </etc/ipatbles/rules.v4
+```
  
+### If you parmanently  delete rules in ip tables.ables
+```
+iptables -F
+```
+### Then run this command.
+```
+service iptables save
+```
+
+## Block 'ping', we will not be able to ping to firewall.
+```
+iptable -A INPUT -p icmp -j DROP
+```
+  
