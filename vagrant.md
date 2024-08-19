@@ -1,7 +1,55 @@
 # Vagrant------
 
 
-### how to up vagrant vm.
+### Vagrant installation-
+```
+wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+sudo apt update && sudo apt install vagrant
+```
+
+After install vagrant check vagrant --version
+```
+vagrant --version
+```
+
+Create a directory
+```
+mkdir -p myvm/myvag
+```
+change directory--
+
+```
+cd myvg 
+```
+
+Initialize the project
+
+```
+vagrant init generic/ubuntu2204
+```	
+
+The first step to configure any Vagrant project is to create a Vagrantfile. The 'Vagrantfile' allows you to:
+```
+vi Vagrantfile
+```
+edit this line and " write name of your box"
+```
+config.vm.box = "generic/ubuntu2204"
+```
+
+
+Install a box vagrant box add
+
+```
+vagrant box add generic/ubuntu2204
+```
+	
+If your want install another box so 'https://portal.cloud.hashicorp.com/vagrant/discover` visit this link and seletc and install 
+
+
+### how to up vagrant vm
+
 ```
 vagrant up
 ```
@@ -48,13 +96,3 @@ config.vm.network "public_network", bridge: "your_network_interface", type: "dhc
 ```
 config.vm.network "public_network", bridge: "en0p1:", ip: "192.168.1.20"
 ```
-
-
-
-
-
-
-
-
-
-
