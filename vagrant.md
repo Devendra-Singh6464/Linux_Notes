@@ -37,8 +37,6 @@ edit this line and " write name of your box"
 ```
 config.vm.box = "generic/ubuntu2204"
 ```
-
-
 Install a box vagrant box add
 
 ```
