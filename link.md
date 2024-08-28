@@ -36,3 +36,5 @@ Almost all here:  https://tech2towards.blogspot.com/
 35. opencart install : https://docs.vultr.com/install-opencart-on-ubuntu-20-04
 36. odoo installation : https://www.cybrosys.com/blog/how-to-install-odoo-17-on-ubuntu-20-04-lts-server
 37. odoo installation : https://www.rosehosting.com/blog/how-to-install-odoo-17-on-ubuntu-22-04/
+38. hp printer install: https://developers.hp.com/hp-linux-imaging-and-printing/install/manual/distros/ubuntu
+39. 
