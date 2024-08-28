@@ -34,3 +34,5 @@ Almost all here:  https://tech2towards.blogspot.com/
 33. React native : https://rlogicaltech.medium.com/how-to-install-react-native-on-mac-step-by-step-guide-1ac822aedd4f
 34. firefox : https://www.omgubuntu.co.uk/2022/04/how-to-install-firefox-deb-apt-ubuntu-22-04
 35. opencart install : https://docs.vultr.com/install-opencart-on-ubuntu-20-04
+36. odoo installation : https://www.cybrosys.com/blog/how-to-install-odoo-17-on-ubuntu-20-04-lts-server
+37. odoo installation : https://www.rosehosting.com/blog/how-to-install-odoo-17-on-ubuntu-22-04/
