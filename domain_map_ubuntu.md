@@ -71,4 +71,8 @@ vi index.html
 ```
 <h1> Hello This is demo domian name </h1>
 ```
- 
+ restart apache2:
+ ```
+systemctl restart apache2
+```
+
