@@ -38,3 +38,6 @@ Almost all here:  https://tech2towards.blogspot.com/
 37. odoo installation : https://www.rosehosting.com/blog/how-to-install-odoo-17-on-ubuntu-22-04/
 38. hp printer install: https://developers.hp.com/hp-linux-imaging-and-printing/install/manual/distros/ubuntu
 39. https://developers.hp.com/hp-linux-imaging-and-printing/gethplip
+40. display custom resolution: https://ubuntuhandbook.org/index.php/2017/04/custom-screen-resolution-ubuntu-desktop/
+41. display custom resolution; https://askubuntu.com/questions/377937/how-do-i-set-a-custom-resolution
+
