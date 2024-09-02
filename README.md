@@ -1,1 +1,1 @@
-This tutorial for linux administor and networking basic
+This tutorial is for Linux administrator, Networking Basic, and installation.
