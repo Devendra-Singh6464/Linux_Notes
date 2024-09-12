@@ -40,4 +40,6 @@ Almost all here:  https://tech2towards.blogspot.com/
 39. https://developers.hp.com/hp-linux-imaging-and-printing/gethplip
 40. display custom resolution: https://ubuntuhandbook.org/index.php/2017/04/custom-screen-resolution-ubuntu-desktop/
 41. display custom resolution; https://askubuntu.com/questions/377937/how-do-i-set-a-custom-resolution
+42. printer_process stop: https://askubuntu.com/questions/350334/how-do-i-clear-a-print-queue-in-ubuntu
+43. 
 
