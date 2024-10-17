@@ -1,4 +1,5 @@
-Almost all here 1.  https://tech2towards.blogspot.com/
+Almost all here: 
+1. https://tech2towards.blogspot.com/
 2. https://linux.how2shout.com/tag/ubuntu-20-04/page/2/
 3. https://ostechnix.com/
 4. https://github.com/rstacruz/cheatsheets/tree/master
