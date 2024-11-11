@@ -1,24 +1,26 @@
 Almost all 
-1.  https://tech2towards.blogspot.com/
+1. https://tech2towards.blogspot.com/
 2. https://linux.how2shout.com/tag/ubuntu-20-04/page/2/
 3. https://ostechnix.com/
 4. https://github.com/rstacruz/cheatsheets/tree/master
 
-5. shutter: https://www.tecmint.com/install-shutter-in-ubuntu/#:~:text=On%20Ubuntu%2020.04%2C%20the%20Shutter,also%20works%20on%20Linux%20Mint).
-6. filezilla: https://askubuntu.com/questions/297845/how-do-i-install-filezilla
-7. filezilla: https://www.computernetworkingnotes.com/linux-tutorials/how-to-install-filezilla-ftp-client-in-ubuntu.html
-8. Firefox : https://www.omgubuntu.co.uk/2022/04/how-to-install-firefox-deb-apt-ubuntu-22-04
-9. atom: https://gcore.com/learning/how-to-install-atom-on-ubuntu/
-10. lamp: https://www.digitalocean.com/community/tutorials/how-to-install-lamp-stack-on-ubuntu
-11. chromium: https://askubuntu.com/questions/250773/how-do-i-install-chromium-from-the-command-line
-12. chrome: https://www.geeksforgeeks.org/how-to-install-chrome-in-ubuntu/
-13. chromium: https://www.omgubuntu.co.uk/2019/08/install-chromium-browser-ubuntu
-14. kazam :https://www.geeksforgeeks.org/how-to-install-kazam-on-ubuntu/
-15. php my admin: https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-20-04
-16. VS CODE: https://phoenixnap.com/kb/install-vscode-ubuntu
-17. composer: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-20-04
-18. varnish: https://www.varnish-software.com/developers/tutorials/installing-varnish-ubuntu/
-19. iptable drop accept: https://www.ibm.com/docs/en/linux-on-systems?topic=tests-firewall-iptables-rules
+5. bash scripting: https://www.linode.com/docs/guides/an-intermediate-guide-to-bash-scripting/#use-printf-in-a-script
+6. bash scripting: https://devhints.io/bash
+7. shutter: https://www.tecmint.com/install-shutter-in-ubuntu/#:~:text=On%20Ubuntu%2020.04%2C%20the%20Shutter,also%20works%20on%20Linux%20Mint).
+8. filezilla: https://askubuntu.com/questions/297845/how-do-i-install-filezilla
+9. filezilla: https://www.computernetworkingnotes.com/linux-tutorials/how-to-install-filezilla-ftp-client-in-ubuntu.html
+10. Firefox : https://www.omgubuntu.co.uk/2022/04/how-to-install-firefox-deb-apt-ubuntu-22-04
+11. atom: https://gcore.com/learning/how-to-install-atom-on-ubuntu/
+12. lamp: https://www.digitalocean.com/community/tutorials/how-to-install-lamp-stack-on-ubuntu
+13. chromium: https://askubuntu.com/questions/250773/how-do-i-install-chromium-from-the-command-line
+14. chrome: https://www.geeksforgeeks.org/how-to-install-chrome-in-ubuntu/
+15. chromium: https://www.omgubuntu.co.uk/2019/08/install-chromium-browser-ubuntu
+16. kazam :https://www.geeksforgeeks.org/how-to-install-kazam-on-ubuntu/
+17. php my admin: https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-20-04
+18. VS CODE: https://phoenixnap.com/kb/install-vscode-ubuntu
+19. composer: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-20-04
+20. varnish: https://www.varnish-software.com/developers/tutorials/installing-varnish-ubuntu/
+21. iptable drop accept: https://www.ibm.com/docs/en/linux-on-systems?topic=tests-firewall-iptables-rules
     AND.  https://help.ubuntu.com/community/IptablesHowTo
 17. WordPress: https://vexxhost.com/resources/tutorials/how-to-install-wordpress-with-ubuntu-20-04-and-a-lamp-stack/
 18. Prestashop:   https://www.atlantic.net/vps-hosting/how-to-install-prestashop-on-ubuntu-20-04/
