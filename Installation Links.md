@@ -123,3 +123,4 @@ react-native setup: https://reactnative.dev/docs/set-up-your-environment
 kubernets install: https://phoenixnap.com/kb/install-kubernetes-on-ubuntu
 
 kubernets install: https://hostnextra.com/learn/tutorials/how-to-install-kubernetes-k8s-on-ubuntu
+https://grahamhelton.com/blog/vagrant/
